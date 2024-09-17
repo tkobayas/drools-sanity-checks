@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <pluginGroups>
+  </pluginGroups>
+
+  <proxies>
+  </proxies>
+
+  <servers>
+  </servers>
+
+  <mirrors>
+  </mirrors>
+
+  <profiles>
+    <profile>
+      <id>basic-profile</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <repositories>
+
+        <repository>
+          <id>kie-drools-staging</id>
+          <url>https://repository.apache.org/content/repositories/orgapachekie-1005/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+
+      </repositories>
+      
+      <pluginRepositories>
+        <pluginRepository>
+          <id>kie-drools-staging-plugin</id>
+          <url>https://repository.apache.org/content/repositories/orgapachekie-1005/</url>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>  
+
+  </profiles>
+
+</settings>
